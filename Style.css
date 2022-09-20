@@ -24,10 +24,17 @@ table {
     color: orangered;
 }
 
-td{
+td{ /*for chess board*/
     background-color:brown;
     width: 60px;
     border:solid grey 1px;
+}
+
+/* for sign in form table*/
+td.signIn{
+    background-color: unset;
+    width: unset;
+    border:unset;
 }
 
 tr{
