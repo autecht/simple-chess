@@ -1,0 +1,13 @@
+td{ /*for chess board*/
+    background-color:brown;
+    width: 60px;
+    border:solid grey 1px;
+}
+
+tr{
+    height:60px;
+}
+
+td.whiteSquare{
+    background-color: wheat;
+}

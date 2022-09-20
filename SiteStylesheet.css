@@ -1,0 +1,26 @@
+body {
+    background-color:darkslategrey;
+    text-align: center;
+}
+
+h1 {
+    color:red;
+    font-size:300%;
+    
+}
+
+p {
+    color:orangered;
+    font-size: 150%;
+}
+
+table {
+    margin:auto;
+}
+
+.inputInfo {
+    opacity: 0.5;
+    font-size: 75%;
+    color: orangered;
+}
+
