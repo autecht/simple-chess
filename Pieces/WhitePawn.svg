@@ -7,8 +7,31 @@
    viewBox="0 0 15.874999 15.874999"
    version="1.1"
    id="svg197"
+   sodipodi:docname="WhitePawn.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview139"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="13.816667"
+     inkscape:cx="30.036188"
+     inkscape:cy="30.036188"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
   <defs
      id="defs194" />
   <g
@@ -34,5 +57,12 @@
        cy="4.3299036"
        rx="1.3696126"
        ry="1.5350866" />
+    <rect
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.264"
+       id="rect1589"
+       width="2.8730197"
+       height="0.28782684"
+       x="6.3190684"
+       y="5.4573388" />
   </g>
 </svg>

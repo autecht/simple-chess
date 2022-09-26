@@ -6,6 +6,7 @@
 
 var lastClicked = ""; // stores id of last clicked square
 var pieceSelected = false; // whether there is currently a piece selected
+var extraPieceSelected = false; // string representing what piece from editor is selected
 
 /* Sets usernames based on names from form. */
 function signIn(){
@@ -48,19 +49,36 @@ function getNames(urlInfo){
 
     @param square: id of square selected
 */
-function select(square){
+function selectSquare(square){
     changeBorderedSquare(square);
     if(!pieceSelected){ // need to register a piece is now selected
-        pieceSelected = true;
+        var isPiece = document.getElementById(square).innerHTML.includes("img");
+        if(isPiece){
+            pieceSelected = true;
+        }
+        
     }
     else{ // need to move piece to desired square
         move(square);
         pieceSelected = false;
     }
+    extraPieceSelected = false;
     lastClicked = square;  
 }
 
-// removes distinct border from previous square and adds it to selected one
+/**
+ * Updates variables so that next click on chess board will replace piece on
+ * square with that selected from extra piece table.
+ *
+ * @param piece: string representing piece selected from extra piece table.
+ */
+function selectPiece(piece){
+    changeBorderedSquare(piece);
+    extraPieceSelected = true;
+    pieceSelected = true;
+    lastClicked = piece;
+}
+
 /*
     Removes distinct border from previous square and adds it to selected one.
 
@@ -74,14 +92,25 @@ function changeBorderedSquare(square){
 }
 
 
-// removes piece from previous square and places it on selected square
+
 /*
-    Removes piece from previous square and places it on selected square.
+    Moves selected piece to appropriate square.
 
     @param square: id of square selected.
 */
 function move(square){
-    document.getElementById(square).innerHTML 
-            = document.getElementById(lastClicked).innerHTML;
+    
+    if(lastClicked != "Remove"){ // to keep x in remove square from appearing on board
+        document.getElementById(square).innerHTML 
+                = document.getElementById(lastClicked).innerHTML;
+    }
+    else{
+        document.getElementById(square).innerHTML = "";
+    }
+    
+    if(extraPieceSelected){ // to avoid changing extra piece table
+        return;
+    }
     document.getElementById(lastClicked).innerHTML = "";
 }
+
