@@ -3,9 +3,14 @@ body {
     text-align: center;
 }
 
-h1, h2 {
+h1 {
     color:red;
     font-size:300%;
+    
+}
+h2 {
+    color:red;
+    font-size:175%;
     
 }
 
